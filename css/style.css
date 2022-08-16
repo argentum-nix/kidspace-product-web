@@ -1,0 +1,400 @@
+@keyframes animate {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  20%, 25% {
+    transform: rotateX(0) rotateY(720deg);
+  }
+  45%, 50% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+  70%, 75% {
+    transform: rotateX(720deg) rotateY(0);
+  }
+  95%, 100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+
+.loading-container {
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.loading-flip {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  animation: flip 16s infinite;
+}
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+.navbar {
+    border: 0;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: black;
+}
+
+.showcase-btn{
+    background-color: #F18E74;
+    color: white;
+}
+
+.showcase-btn:hover {
+    background-color: #ff94c1;
+    color: white;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+}
+
+
+#showcase img {
+    width: 100%;
+    height: 100%;
+}
+
+#showcase {
+    margin-top: 130px;
+}
+
+
+#cards {
+    margin-top: 40px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.background-shape {
+    overflow: clip;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(222,168,248,1) 0%, rgba(168,222,248,1) 21.8%, rgba(189,250,205,1) 35.6%, rgba(243,250,189,1) 52.9%, rgba(250,227,189,1) 66.8%, rgba(248,172,172,1) 90%, rgba(254,211,252,1) 99.7% );
+    width: 100%;
+    height: 800px;
+    -ms-transform: skewY(-20deg);
+    -webkit-transform: skewY(-20deg);
+    transform: skewY(-15deg);
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+}
+
+.background-shape:before {
+    content: '';
+    border-radius: 10%;
+    width: 100%;
+    padding-top: 75%;
+    background: #f1f1f1;
+    position: absolute;
+    object-fit:fill;
+    transform: rotate(45deg) translate(-10%, -50%);
+    mix-blend-mode: overlay;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#showcase .showcase-right {
+    padding-top: 40px;
+    margin-left: 20px;
+}
+
+
+#testimonial {
+    background-color: #f1f1f1;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    margin-top:40px;
+}
+
+#video-info {
+    padding: 30px 0 30px 0;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+}
+
+#video-info .video-info-right  {
+    text-align: center;
+}
+
+#choose-us {
+    margin-top: 40px;
+}
+
+#choose-us .choose-us-left {
+    width: 50%;
+}
+
+#testimonial p {
+    font-size: 20px;
+}
+
+#testimonial p.author {
+    font-size: 17px;
+}
+
+#copyright {
+    background-color: #f1f1f1;
+    text-align: center
+}
+
+.icon {
+    color: white;
+}
+
+
+.card-background1 {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    background-color: #FCE8E3;
+}
+
+.card-background2 {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    background-color: #FFF5DD;
+}
+
+.card-background3 {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    background-color: #DEEBFB;
+}
+
+.card-background4 {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    background-color: #E8E0FF;
+}
+
+
+.icon-background1 {
+    color: #F18E74;
+}
+
+.icon-background2 {
+    color: #FECE56;
+}
+
+.icon-background3 {
+    color: #5C9DEC;
+}
+
+.icon-background4 {
+    color: #8E66FF;
+}
+
+.icon-background5 {
+    color: #8f8f8f;
+}
+
+.footer-logo {
+    max-width: 60%;
+    justify-content: center;
+}
+
+.footer-feria-logo {
+    max-width: 130px;
+}
+
+.mini-footer {
+    width: 100%;
+    text-align: center;
+}
+
+.profession {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.phone img{
+    margin-top: 230px;
+    animation: animate 9s infinite;
+}
+
+.medicine {
+    width: 25%
+}
+
+.construction {
+    width: 25%
+}
+
+.art {
+    width: 25%;
+}
+.medicine img {
+    rotate: -20deg;
+    margin-left: 50%;
+    padding-bottom: 200%;
+    animation: animate 3s infinite;
+}
+
+.construction img {
+    margin-left: 130%;
+    rotate: 5deg;
+    padding-bottom: 270%;
+    animation: animate 3s infinite;
+}
+
+.art img {
+    rotate: 12deg;
+    overflow: clip;
+    padding-bottom: 70%;
+    margin-left: 250%;
+    animation: animate 3s infinite;
+}
+
+#team-header {
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+#team-header .team-header-left {
+    width: 50%;
+}
+
+#team-header .team-header-right {
+    padding-top: 10px;
+}
+
+.team-card {
+    border: none;
+    overflow: hidden;
+    border-radius: 20px;
+    max-width: 300px;
+    min-height: 350px;
+    max-height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 12px;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.team-card:hover {
+    transform: scale(0.98);
+}
+
+.team-card-footer {
+    align-self: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.role-body {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.role-body :hover {
+    transform: scale(1.1);
+}
+
+.role-body h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+#contact-header {
+    margin-top: 130px;
+    margin-bottom: 10px;
+}
+
+#contact-header .contact-header-left{
+    margin-top: 25px;
+    width: 40%;
+}
+
+#contact-header .contact-header-right{
+    margin-top: 50px;
+}
+
+#contact {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+
+.fa-stack:hover {
+    transform: scale(1.12);
+}
+
+
+#about-header {
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+#about-header .about-header-left {
+    width: 50%;
+}
+
+#about-header .about-header-right {
+    padding-top: 10px;
+}
+
+#selfstudy {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#classstudy {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.profession-card {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 12px;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.6);
+    max-width: 14rem;
+}
