@@ -249,7 +249,7 @@ body {
 
 .phone img{
     margin-top: 230px;
-    animation: animate 9s infinite;
+    /* animation: animate 9s infinite; */
 }
 
 .medicine {
@@ -267,14 +267,14 @@ body {
     rotate: -20deg;
     margin-left: 50%;
     padding-bottom: 200%;
-    animation: animate 3s infinite;
+    /* animation: animate 3s infinite; */
 }
 
 .construction img {
     margin-left: 130%;
     rotate: 5deg;
     padding-bottom: 270%;
-    animation: animate 3s infinite;
+    /* animation: animate 3s infinite; */
 }
 
 .art img {
@@ -282,7 +282,7 @@ body {
     overflow: clip;
     padding-bottom: 70%;
     margin-left: 250%;
-    animation: animate 3s infinite;
+    /* animation: animate 3s infinite; */
 }
 
 #team-header {
