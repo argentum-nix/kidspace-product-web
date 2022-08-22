@@ -94,12 +94,12 @@ body {
 }
 
 #showcase {
-    margin-top: 130px;
+    margin-top: 90px;
 }
 
 
 #cards {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .card-title {
@@ -134,7 +134,7 @@ body {
 }
 
 #showcase .showcase-right {
-    padding-top: 40px;
+    padding-top: 15px;
     margin-left: 20px;
 }
 
@@ -206,6 +206,21 @@ body {
     background-color: #E8E0FF;
 }
 
+.icon-background-facebook {
+    color: #1771E6;
+}
+
+.icon-background-twitter {
+    color: #1C98E5;
+}
+
+.icon-background-linkedin {
+    color: #0961B8;
+}
+
+.icon-background-whatsapp {
+    color: #34D251;
+}
 
 .icon-background1 {
     color: #F18E74;
