@@ -14,7 +14,7 @@
 	.st8{fill:#FFFFFF;}
 </style>
 <g id="BACKGROUND">
-	<rect class="st0" width="500" height="500"/>
+	<rect class="st0" width="500" height="0"/>
 </g>
 <g id="OBJECTS">
 	<g>
