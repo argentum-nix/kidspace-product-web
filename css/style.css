@@ -17,12 +17,6 @@
   20%, 25% {
     transform: rotateX(0) rotateY(720deg);
   }
-  45%, 50% {
-    transform: rotateX(720deg) rotateY(720deg);
-  }
-  70%, 75% {
-    transform: rotateX(720deg) rotateY(0);
-  }
   95%, 100% {
     transform: rotateX(0) rotateY(0);
   }
@@ -57,7 +51,7 @@ body.loading {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  animation: flip 16s infinite;
+  animation: flip 10s infinite;
 }
 
 body {
